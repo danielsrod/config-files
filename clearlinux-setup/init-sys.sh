@@ -26,6 +26,7 @@ flatpak install flathub -y --system com.brave.Browser
 flatpak install flathub -y --system com.jetbrains.DataGrip
 flatpak install flathub -y --system com.visualstudio.code
 flatpak install flathub -y --system org.flameshot.Flameshot
+flatpak install flathub -y --system rest.insomnia.Insomnia
 
 # Install Docker & Docker Compose
 sudo swupd bundle-add containers-basic
