@@ -1,15 +1,15 @@
-# Setup .bashrc and .bash_aliases 
+# Setup .bashrc and .aliases 
 echo -e "\n# Create link with file .bash_aliases
-if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
+if [ -f ~/.aliases ]; then
+. ~/.aliases
 fi" >> ~/.bashrc
 
-touch ~/.bash_aliases
+touch ~/.aliases
 
-echo -e "alias searchpkg='flatpak search'" >> .bash_aliases
-echo -e "alias addpkg='flatpak install flathub -y --system'" >> .bash_aliases
-echo -e "alias s1='ssh drodrigues@192.168.2.57'" >> .bash_aliases
-echo -e "alias code='flatpak run com.visualstudio.code'" >> .bash_aliases
+echo -e "alias searchpkg='flatpak search'" >> .aliases
+echo -e "alias addpkg='flatpak install flathub -y --system'" >> .aliases
+echo -e "alias s1='ssh drodrigues@192.168.2.57'" >> .aliases
+echo -e "alias code='flatpak run com.visualstudio.code'" >> .aliases
 
 # Setup ~/.ssh
 ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
