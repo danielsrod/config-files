@@ -22,3 +22,5 @@ sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/' ~/.zshrc
 echo -e "\n# Add link to use nvm and node in zsh\nexport NVM_DIR="$HOME/.nvm"" >> ~/.zshrc
 echo -e "[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm" >> ~/.zshrc
 echo -e "[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion" >> ~/.zshrc
+
+source ~/.zshrc
