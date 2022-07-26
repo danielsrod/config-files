@@ -24,12 +24,20 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 # Installing tools
 flatpak install flathub -y --system com.anydesk.Anydesk     
+
 flatpak install flathub -y --system com.axosoft.GitKraken
+### Other softwares like Gitkraken
+# flatpak install flathub -y --system com.github.Murmele.Gittyup
+# flatpak install flathub -y --system io.github.shiftey.Desktop
 flatpak install flathub -y --system com.brave.Browser
+### If you prefer Google Chrome
+#flatpak install flathub -y --system com.google.Chrome
 flatpak install flathub -y --system com.jetbrains.DataGrip
 flatpak install flathub -y --system com.visualstudio.code
 flatpak install flathub -y --system org.flameshot.Flameshot
 flatpak install flathub -y --system rest.insomnia.Insomnia
+### If you prefer Postman
+# flatpak install flathub -y --system com.getpostman.Postman
 flatpak install flathub -y --system com.spotify.Client
 
 # Install Docker & Docker Compose
