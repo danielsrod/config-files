@@ -1,5 +1,5 @@
 # Setup Zsh and OhMyZsh
-sudo swupd bundle-add zsh
+sudo swupd bundle-add --assume=yes zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

@@ -15,7 +15,7 @@ echo -e "alias code='flatpak run com.visualstudio.code'" >> .aliases
 ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
 
 # Install NVM (Node Version Manager)
-sudo swupd bundle-add wget # By default, clear linux don't have wget
+sudo swupd bundle-add --assume=yes wget # By default, clear linux don't have wget
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
@@ -32,7 +32,7 @@ flatpak install flathub -y --system org.flameshot.Flameshot
 flatpak install flathub -y --system rest.insomnia.Insomnia
 
 # Install Docker & Docker Compose
-sudo swupd bundle-add containers-basic
+sudo swupd bundle-add --assume=yes containers-basic
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo docker version
