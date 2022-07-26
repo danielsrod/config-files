@@ -1,3 +1,4 @@
+sudo echo "Shell Script made by Daniel Rodrigues"
 # Change hostname
 hostnamectl set-hostname clearlinux
 
