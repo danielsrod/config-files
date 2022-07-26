@@ -17,3 +17,8 @@ source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Auto Suggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/' ~/.zshrc
+
+# Add link to use nvm in zsh
+echo -e "\n# Add link to use nvm and node in zsh\nexport NVM_DIR="$HOME/.nvm"" >> ~/.zshrc
+echo -e "[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm" >> ~/.zshrc
+echo -e "[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion" >> ~/.zshrc

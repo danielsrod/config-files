@@ -1,5 +1,5 @@
 # Setup .bashrc and .aliases 
-echo -e "\n# Create link with file .bash_aliases
+echo -e "\n# Create link with file ~/.aliases
 if [ -f ~/.aliases ]; then
 . ~/.aliases
 fi" >> ~/.bashrc
