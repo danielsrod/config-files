@@ -38,7 +38,7 @@ flatpak install flathub -y --system com.axosoft.GitKraken
 # flatpak install flathub -y --system io.github.shiftey.Desktop
 flatpak install flathub -y --system com.brave.Browser
 ### If you prefer Google Chrome
-#flatpak install flathub -y --system com.google.Chrome
+# flatpak install flathub -y --system com.google.Chrome
 flatpak install flathub -y --system com.jetbrains.DataGrip
 flatpak install flathub -y --system com.visualstudio.code
 flatpak install flathub -y --system org.flameshot.Flameshot
