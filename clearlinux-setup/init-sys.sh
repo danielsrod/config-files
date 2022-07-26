@@ -1,4 +1,6 @@
 sudo echo "Shell Script made by Daniel Rodrigues"
+sudo swupd autoupdate --disable
+sudo swupd update --assume=yes
 # Change hostname
 hostnamectl set-hostname clearlinux
 
@@ -55,6 +57,8 @@ sudo mkdir /usr/local/bin # This folder doesn't not exists by default
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
+
+sudo swupd autoupdate --enable
 
 echo "Your SSH key was generated"
 echo ~./.ssh/id_rsa.pub
