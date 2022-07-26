@@ -6,7 +6,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # The file ~/.aliases can be used for both zsh and bash
 echo -e "\n# Load .aliases file\nsource $HOME/.aliases" >> ~/.zshrc
 
-# Change the theme
+# Change the theme (Just change "zhann" to your fav theme)
 sed -i 's/robbyrussell/zhann/' ~/.zshrc
 
 # Syntax Highlighting
