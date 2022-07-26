@@ -1,3 +1,6 @@
+# Change hostname
+hostnamectl set-hostname clearlinux
+
 # Setup .bashrc and .aliases 
 echo -e "\n# Create link with file ~/.aliases
 if [ -f ~/.aliases ]; then
