@@ -14,10 +14,11 @@ echo -e "alias code='flatpak run com.visualstudio.code'" >> .aliases
 # Setup ~/.ssh
 ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
 
-# Install NVM (Node Version Manager)
+# Install NVM (Node Version Manager) and Node 14.x.x
 sudo swupd bundle-add --assume=yes wget # By default, clear linux don't have wget
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install 14 # If you want, just change 14 for whatever verison you want
 
 # First of all, set flathub as a repository
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
