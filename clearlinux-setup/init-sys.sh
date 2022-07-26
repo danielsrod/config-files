@@ -19,6 +19,9 @@ sudo swupd bundle-add wget # By default, clear linux don't have wget
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
+# First of all, set flathub as a repository
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
 # Installing tools
 flatpak install flathub -y --system com.anydesk.Anydesk     
 flatpak install flathub -y --system com.axosoft.GitKraken
