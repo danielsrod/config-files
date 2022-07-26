@@ -30,6 +30,7 @@ flatpak install flathub -y --system com.jetbrains.DataGrip
 flatpak install flathub -y --system com.visualstudio.code
 flatpak install flathub -y --system org.flameshot.Flameshot
 flatpak install flathub -y --system rest.insomnia.Insomnia
+flatpak install flathub -y --system com.spotify.Client
 
 # Install Docker & Docker Compose
 sudo swupd bundle-add --assume=yes containers-basic
