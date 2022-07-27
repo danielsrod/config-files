@@ -20,6 +20,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install 14 # If you want, just change 14 for whatever verison you want
 
+# Install Bun
+curl https://bun.sh/install | bash
+
 # First of all, set flathub as a repository
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
