@@ -1,3 +1,9 @@
+sudo echo "Shell Script made by Daniel Rodrigues"
+sudo swupd autoupdate --disable
+sudo swupd update --assume=yes
+# Change hostname
+hostnamectl set-hostname clearlinux
+
 # Setup .bashrc and .aliases 
 echo -e "\n# Create link with file ~/.aliases
 if [ -f ~/.aliases ]; then
@@ -35,7 +41,7 @@ flatpak install flathub -y --system com.axosoft.GitKraken
 # flatpak install flathub -y --system io.github.shiftey.Desktop
 flatpak install flathub -y --system com.brave.Browser
 ### If you prefer Google Chrome
-#flatpak install flathub -y --system com.google.Chrome
+# flatpak install flathub -y --system com.google.Chrome
 flatpak install flathub -y --system com.jetbrains.DataGrip
 flatpak install flathub -y --system com.visualstudio.code
 flatpak install flathub -y --system org.flameshot.Flameshot
@@ -54,3 +60,16 @@ sudo mkdir /usr/local/bin # This folder doesn't not exists by default
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
+
+sudo swupd autoupdate --enable
+
+echo "Your SSH key was generated"
+echo ~./.ssh/id_rsa.pub
+echo "Please, reboot your system to apply all changes"
+
+read -p "Reboot system? [Y/y for yes | N/n for no] " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[YySs]$ ]]
+then
+	reboot
+fi
