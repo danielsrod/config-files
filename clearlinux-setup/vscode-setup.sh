@@ -27,4 +27,4 @@ sudo mv vscode.desktop /usr/share/applications
 echo ">>> Creating alias [code=/opt/vscode/code]  <<<"
 echo "alias code='/opt/vscode/bin/code'" >> ~/.aliases
 
-echo "Please, reboot your terminal to apply changes"
+echo "Please, give a source to .zshrc or .bashrc to apply changes"
