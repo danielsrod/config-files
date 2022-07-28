@@ -1,6 +1,5 @@
 sudo echo "Shell Script made by Daniel Rodrigues"
 sudo swupd autoupdate --disable
-sudo swupd update --assume=yes
 # Change hostname
 hostnamectl set-hostname clearlinux
 
@@ -25,6 +24,7 @@ sudo swupd bundle-add --assume=yes wget # By default, clear linux don't have wge
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install 14 # If you want, just change 14 for whatever verison you want
+sudo npm i -g yarn
 
 # Install Bun
 curl https://bun.sh/install | bash
