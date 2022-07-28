@@ -1,3 +1,6 @@
+# Disable swupd autoupdate
+sudo swupd autoupdate --disable
+
 # Setup Zsh and OhMyZsh
 sudo swupd bundle-add --assume=yes zsh
 chsh -s $(which zsh)
@@ -23,4 +26,7 @@ echo -e "\n# Add link to use nvm and node in zsh\nexport NVM_DIR="$HOME/.nvm"" >
 echo -e "[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm" >> ~/.zshrc
 echo -e "[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion" >> ~/.zshrc
 
-source ~/.zshrc
+# Enable swupd autoupdate
+sudo swupd autoupdate --enable
+
+echo "Please, give a source to .zshrc or .bashrc to apply changes"
