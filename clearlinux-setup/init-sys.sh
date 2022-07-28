@@ -51,6 +51,9 @@ flatpak install flathub -y --system rest.insomnia.Insomnia
 # flatpak install flathub -y --system com.getpostman.Postman
 flatpak install flathub -y --system com.spotify.Client
 
+# Customize gnome (Defualt window is white, so you can change to dark)
+flatpak install flathub -y --system com.mattjakeman.ExtensionManager
+
 # Install Docker & Docker Compose
 sudo swupd bundle-add --assume=yes containers-basic
 sudo systemctl start docker
