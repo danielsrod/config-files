@@ -54,6 +54,9 @@ flatpak install flathub -y --system com.spotify.Client
 # Customize gnome (Defualt window is white, so you can change to dark)
 flatpak install flathub -y --system com.mattjakeman.ExtensionManager
 
+# Set gtk-theme to dark (Some windows still light, so we gonna force it)
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+
 # Install Docker & Docker Compose
 sudo swupd bundle-add --assume=yes containers-basic
 sudo systemctl start docker
