@@ -25,6 +25,6 @@ StartupNotify=true" >> vscode.desktop
 echo ">>> Moving the file vscode.desktop to /usr/share/applications  <<<"
 sudo mv vscode.desktop /usr/share/applications
 echo ">>> Creating alias [code=/opt/vscode/code]  <<<"
-echo "alias code='/opt/vscode/code'" >> ~/.aliases
+echo "alias code='/opt/vscode/bin/code'" >> ~/.aliases
 
 echo "Please, reboot your terminal to apply changes"
