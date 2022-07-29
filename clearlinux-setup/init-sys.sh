@@ -57,6 +57,10 @@ flatpak install flathub -y --system com.mattjakeman.ExtensionManager
 # Set gtk-theme to dark (Some windows still light, so we gonna force it)
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 
+# Remmina to access windows from clearlinux
+flatpak install flathub -y --system org.remmina.Remmina
+
+
 # Install Docker & Docker Compose
 sudo swupd bundle-add --assume=yes containers-basic
 sudo systemctl start docker
